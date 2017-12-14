@@ -23,6 +23,14 @@
 print utility\htmlTable::generateTableFromOneRecord($data);
 ?>
 <form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1">
+    ID:<input type="text" name="fname" value="<?php echo $data->id; ?>"><br>
+    Owneremail:<input type="email" name="onweremail" value="<?php echo $data->owneremail; ?>"><br>
+    ownerid:<input type="number" name="onwerid" value="<?php echo $data->ownerid; ?>"><br>
+    createdate:<input type="date" name="createdate" value="<?php echo $data->createddate; ?>"><br>
+    duedate:<input type="date" name="duedate" value="<?php echo $data->duedate; ?>"><br>
+    message:<input type="text" name="message" value="<?php echo $data->message; ?>"><br>
+    isdone:<input type="number" name="isdone" value="<?php echo $data->isdone; ?>"><br>
+    <input type="submit" value="Submit form"><br><br>
     <button type="submit" form="form1" value="delete">Delete</button>
 </form>
 

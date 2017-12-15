@@ -17,7 +17,10 @@ class accountsController extends http\controller
     {
         $record = accounts::findOne($_REQUEST['id']);
         self::getTemplate('show_account', $record);
-    }
+       }
+        
+    
+
 
     //to call the show function the url is index.php?page=accounts&action=all
 
@@ -139,7 +142,6 @@ class accountsController extends http\controller
             }
 
         }
-
 
 
 

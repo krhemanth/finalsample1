@@ -53,6 +53,7 @@ class accountsController extends http\controller
 
         if ($user == FALSE) {
             $user = new account();
+            
             $user->email = $_POST['email'];
             $user->fname = $_POST['fname'];
             $user->lname = $_POST['lname'];
@@ -63,7 +64,7 @@ class accountsController extends http\controller
             //this creates the password
             //this is a mistake you can fix...
             //Turn the set password function into a static method on a utility class.
-            $user->password = $user->setPassword($_POST['password']);
+            $user->password = account::setPassword($_POST['password']);
             $user->save();
 
             //you may want to send the person to a

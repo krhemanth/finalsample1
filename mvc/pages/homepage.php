@@ -22,15 +22,16 @@
     <?php
 
     //this how to print some data;
-    echo $data['site_name'];
+    echo $data['site_name']."<br>";
+    
 
-    ?> </h1>
+    ?> 
 
-<h1><a href="index.php?page=accounts&action=all">Show All Accounts</a></h1>
-<h1><a href="index.php?page=tasks&action=all">Show All Tasks</a></h1>
-
-
+<br>
+<br>
 <form action="index.php?page=accounts&action=login" method="POST">
+  <font face = "Comic sans MS" size =" 5">
+   
 
     <div class="container">
         <label><b>Username</b></label>

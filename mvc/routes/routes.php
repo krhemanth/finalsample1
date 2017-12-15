@@ -170,7 +170,23 @@ class routes
         $route->controller = 'tasksController';
         $route->method = 'insert';
         $routes[] = $route;
-
+        
+        
+      $routes[]=self::create('GET','create','homepage','accountsController','create');  
+      $routes[]=self::create('GET','show','tasks','tasksController','show');
+      $routes[]=self::create('GET','all','tasks','tasksController','all');    
+      $routes[]=self::create('GET','all','accounts','accountsController','all');
+      $routes[]=self::create('GET','show','accounts','accountsController','show');
+      $routes[]=self::create('POST','login','accounts','accountsController','login');
+      $routes[]=self::create('POST','delete','tasks','tasksController','delete');
+      $routes[]=self::create('POST','delete','accounts','accountsController','delete');
+      $routes[]=self::create('GET','edit','accounts','accountsController','edit');
+      $routes[]=self::create('POST','save','accounts','accountsController','save');
+      $routes[]=self::create('POST','save','tasks','tasksController','save');
+      $routes[]=self::create('POST','insert','tasks','tasksController','insert');
+      $routes[]=self::create('GET','register','accounts','accountsController','register');
+      $routes[]=self::create('POST','register','accounts','accountsController','store');
+      $routes[]=self::create('POST','insert','tasks','tasksController','insert');
 
         return $routes;
     }

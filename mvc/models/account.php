@@ -33,7 +33,7 @@ final class account extends \database\model
 
 
 
-    public function setPassword($password) {
+    Static public function setPassword($password) {
 
         $password = password_hash($password, PASSWORD_BCRYPT);
 

@@ -22,21 +22,22 @@
 
 print utility\htmlTable::generateTableFromOneRecord($data);
 ?>
-<form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1">
 
-    ID:<input type="number" name="id" value="<?php echo $data->id; ?>"><br>
+<form action="index.php?page=tasks&action=save&id=<?php echo $data->id; ?>" method="post"> 
     Owneremail:<input type="email" name="onweremail" value="<?php echo $data->owneremail; ?>"><br>
     Ownerid:<input type="number" name="onwerid" value="<?php echo $data->ownerid; ?>"><br>
-    Createdate:<input type="date" name="createdate" value="<?php echo $data->createddate; ?>"><br>
-    Duedate:<input type="date" name="duedate" value="<?php echo $data->duedate; ?>"><br>
+    Createdate:<input type="text" name="createdate" value="<?php echo $data->createddate; ?>"><br>
+    Duedate:<input type="text" name="duedate" value="<?php echo $data->duedate; ?>"><br>
     Message:<input type="text" name="message" value="<?php echo $data->message; ?>"><br>
     Isdone:<input type="number" name="isdone" value="<?php echo $data->isdone; ?>"><br>
     <input type="submit" value="Submit form"><br><br>
-    <button type="submit" form="form1" value="delete">Delete</button>
+   
 </form>
 
 
-
+<form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1">
+<button type="submit" form="form1" value="delete">Delete</button>
+</form>
 
 <script src="js/scripts.js"></script>
 </body>

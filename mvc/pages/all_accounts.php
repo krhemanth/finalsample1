@@ -16,14 +16,22 @@
 </head>
 
 <body>
-<h1>All Accounts</h1>
+<h1>Things you got to Doo</h1>
+</h1>
 
-<h1> HI</h1>
+<h1><a href="index.php?page=tasks&action=all">Make your tasks</a></h1>
+<?php 
+
+print utility\htmlTable::genarateTableFromMultiArray($data);
+
+?>
+
+
 
 <?php
 //this is how you print something
 
-print utility\htmlTable::genarateTableFromMultiArray($data);
+
 
 
 ?>

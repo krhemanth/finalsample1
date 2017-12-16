@@ -27,6 +27,7 @@
     Gender:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="text" name="gender"><br><br>
     Password:&nbsp; <input type="password" name="password"><br><br>
     <input type="submit" value="Submit form">
+
     
     
    

@@ -20,7 +20,7 @@
 <?php
 //this is how you print something
 
-print utility\htmlTable::genarateTableFromMultiArray($data);
+
 ?>
 <form action="index.php?page=tasks&action=insert" method="post"> 
      <input type="hidden" name="id">

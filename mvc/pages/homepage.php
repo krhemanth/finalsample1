@@ -22,7 +22,7 @@
     <?php
 
     //this how to print some data;
-    echo $data['site_name']."<br>";
+    echo $data['site_name']
     
 
     ?> 
@@ -45,7 +45,7 @@
 
 
 </form>
-<h1><a href="index.php?page=accounts&action=register">Register</a></h1>
+<h4><a href="index.php?page=accounts&action=register">Sign up</a></h4>
 
 
 <script src="js/scripts.js"></script>

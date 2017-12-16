@@ -78,7 +78,7 @@ class tasksController extends http\controller
         $user->message = $_POST['message'];
         $user->isdone = $_POST['isdone'];
         $user->save();
-        header("Location: index.php?page=tasks&action=all");
+        header("Location: index.php?page=accounts&action=all");
 
     }
     public static function insert() {
@@ -90,7 +90,7 @@ class tasksController extends http\controller
         $record->message = $_POST['message'];
         $record->isdone = $_POST['isdone'];
         $record->save();
-        header("Location: index.php?page=tasks&action=all");
+        header("Location: index.php?page=accounts&action=all");
 
     
 }

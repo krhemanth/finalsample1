@@ -9,6 +9,7 @@
     <meta name="author" content="SitePoint">
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,9 +18,11 @@
 
 <body>
 
-<?php include "header.php" ?>
 
-<a href="index.php?page=accounts&action=ViewProfile">MyProfile</a>
+
+<?php include "header.php" ?><br><br>
+
+<a href="index.php?page=accounts&action=ViewProfile">MyProfile---></a>
 
 <br><br><br>
 
@@ -27,12 +30,12 @@
 <form action="index.php?page=tasks&action=insert" method="post"> 
      
     Owneremail:<input type="email" name="owneremail"><br>
-    Ownerid:<input type="number" name="ownerid" ><br>
-    Createdate:<input type="text" name="createdate" ><br>
-    Duedate:<input type="text" name="duedate"><br>
-    Message:<input type="text" name="message"><br>
-    Isdone:<input type="number" name="isdone"><br>
-    <input type="submit" value="insert form"><br><br>
+    Ownerid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="ownerid" ><br>
+    Createdate:&nbsp;&nbsp;<input type="text" name="createdate" ><br>
+    Duedate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="duedate"><br>
+    Message:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="message"><br>
+    Isdone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="isdone"><br><br><br>
+    <input type="submit" value="Insert Task"><br><br>
    
 </form>
 

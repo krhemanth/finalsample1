@@ -9,6 +9,7 @@
     <meta name="author" content="SitePoint">
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -16,10 +17,10 @@
 </head>
 
 <body>
-<h1>Things you got to Doo</h1>
+<h1>Things you got to Do</h1><br>
 </h1>
 
-<h1><a href="index.php?page=tasks&action=all">Make your tasks</a></h1>
+<h1><a href="index.php?page=tasks&action=all">Make your tasks ---></a></h1>
 <?php 
 
 

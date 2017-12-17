@@ -17,13 +17,13 @@
 
 <body>
 
-<?php
-//this is how you print something
 
 
-?>
+
+
+
 <form action="index.php?page=tasks&action=insert" method="post"> 
-     <input type="hidden" name="id">
+     
     Owneremail:<input type="email" name="owneremail"><br>
     Ownerid:<input type="number" name="ownerid" ><br>
     Createdate:<input type="text" name="createdate" ><br>
@@ -33,9 +33,11 @@
     <input type="submit" value="insert form"><br><br>
    
 </form>
+<?php
 
+print utility\htmlTable::genarateTableFromMultiArray($data);
 
-
+?>
 <script src="js/scripts.js"></script>
 </body>
 </html>

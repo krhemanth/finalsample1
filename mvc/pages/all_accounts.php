@@ -22,7 +22,7 @@
 <h1><a href="index.php?page=tasks&action=all">Make your tasks</a></h1>
 <?php 
 
-print utility\htmlTable::genarateTableFromMultiArray($data);
+
 
 ?>
 
@@ -31,7 +31,7 @@ print utility\htmlTable::genarateTableFromMultiArray($data);
 <?php
 //this is how you print something
 
-
+                                                              
 
 
 ?>

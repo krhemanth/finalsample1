@@ -22,11 +22,11 @@
     <?php
 
     //this how to print some data;
-    echo $data['site_name']
+    echo $data['site_name'];
     
 
     ?> 
-
+</h1>
 <br>
 <br>
 <form action="index.php?page=accounts&action=login" method="POST">

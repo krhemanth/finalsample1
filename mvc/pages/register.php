@@ -23,7 +23,7 @@
     Last name: &nbsp;<input type="text" name="lname"><br><br>
     Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="email"><br><br>
     Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone"><br><br>
-    Birthday:&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" data-date-inline-picker="true" /><br><br>
+    Birthday:&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="birthday" data-date-inline-picker="true" /><br><br>
     Gender:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="text" name="gender"><br><br>
     Password:&nbsp; <input type="password" name="password"><br><br>
     <input type="submit" value="Submit form">

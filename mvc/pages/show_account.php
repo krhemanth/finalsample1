@@ -15,6 +15,10 @@
     <![endif]-->
 </head>
 
+<?php
+ include "header.php";
+ ?>
+
 <body>
 
 <h1>Email: <?php echo $data->email; ?></h1>

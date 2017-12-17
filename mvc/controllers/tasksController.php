@@ -22,18 +22,12 @@ class tasksController extends http\controller
 
     public static function all()
     {
-        $records = todos::findAll();
-        /*session_start();
-           if(key_exists('userID',$_SESSION)) {
-               $userID = $_SESSION['userID'];
-           } else {
-
-               echo 'you must be logged in to view tasks';
-           }
-        $userID = $_SESSION['userID'];
-
-        $records = todos::findTasksbyID($userID);
-        */
+        if(session_status() == PHP_SESSION_NONE){
+            session_start();
+          }
+        $records = todos::findTask($_SESSION["userID"]);
+        
+  //print_r($records);
         self::getTemplate('all_tasks', $records);
 
     }
@@ -77,19 +71,28 @@ class tasksController extends http\controller
         $user->duedate = $_POST['duedate'];
         $user->message = $_POST['message'];
         $user->isdone = $_POST['isdone'];
-        $user->userID =$_SESSION['userID'];
+        $user->userID = $_SESSION['userID'];
         $user->save();
         header("Location: index.php?page=tasks&action=all");
 
     }
+    
     public static function insert() {
-    $record = new todo();
+      
+      
+      if(session_status() == PHP_SESSION_NONE) {
+       session_start();
+       }
+    
+        $record = new todo();
         $record->owneremail = $_POST['owneremail'];
         $record->ownerid = $_POST['ownerid'];
         $record->createddate = $_POST['createdate'];
         $record->duedate = $_POST['duedate'];
         $record->message = $_POST['message'];
         $record->isdone = $_POST['isdone'];
+        $record->userid = $_SESSION['userID'];
+       // print_r ($record);
         $record->save();
         header("Location: index.php?page=tasks&action=all");
         
@@ -119,5 +122,12 @@ class tasksController extends http\controller
         echo "Deleted sucessfully :p";
 
     }
+     public static function logout()
+     {
+     session_start();
+     session_destroy();
+     header("Location: index.php?page=homepage&action=show");
+     exit();
+     }
 
 }

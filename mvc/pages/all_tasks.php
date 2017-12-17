@@ -17,9 +17,11 @@
 
 <body>
 
+<?php include "header.php" ?>
 
+<a href="index.php?page=accounts&action=ViewProfile">MyProfile</a>
 
-
+<br><br><br>
 
 
 <form action="index.php?page=tasks&action=insert" method="post"> 
@@ -27,17 +29,20 @@
     Owneremail:<input type="email" name="owneremail"><br>
     Ownerid:<input type="number" name="ownerid" ><br>
     Createdate:<input type="text" name="createdate" ><br>
-    Duedate:<input type="text" name="duedate" value=""><br>
-    Message:<input type="text" name="message" value=""><br>
-    Isdone:<input type="number" name="isdone" value=""><br>
+    Duedate:<input type="text" name="duedate"><br>
+    Message:<input type="text" name="message"><br>
+    Isdone:<input type="number" name="isdone"><br>
     <input type="submit" value="insert form"><br><br>
    
 </form>
+
 <?php
 
 print utility\htmlTable::genarateTableFromMultiArray($data);
-
 ?>
+
+
+
 <script src="js/scripts.js"></script>
 </body>
 </html>

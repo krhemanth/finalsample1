@@ -104,7 +104,18 @@ class accountsController extends http\controller
         header("Location: index.php?page=accounts&action=all");
 
     }
-
+    
+    
+    public static function ViewProfile()
+    {
+    if (session_status()==PHP_SESSION_NONE)
+    {
+    session_start();
+    }
+     $record = accounts::findOne($_SESSION['userID']);
+     self::getTemplate('show_account', $record);
+   }
+    
     public static function delete() {
 
         $record = accounts::findOne($_REQUEST['id']);
@@ -135,7 +146,7 @@ class accountsController extends http\controller
 
                 session_start();
                 $_SESSION["userID"] = $user->id;
-                header("Location: index.php?page=tasks&action=getTodo");
+                header("Location: index.php?page=accounts&action=all");
 
                 //forward the user to the show all todos page
                 //print_r($_SESSION);
@@ -148,5 +159,11 @@ class accountsController extends http\controller
 
 
     }
+
+    
+    
+    
+    
+     
 
 }

@@ -29,6 +29,8 @@ class routes
       $routes[]=self::create('POST','register','accounts','accountsController','store');
       $routes[]=self::create('POST','insert','tasks','tasksController','insert');
       $routes[]=self::create('GET','getTodo','tasks','tasksController','getTodo');
+      $routes[]=self::create('GET','Logout','accounts','accountsController','logout');
+      $routes[]=self::create('GET','ViewProfile','accounts','accountsController','ViewProfile');
         return $routes;
     }
 

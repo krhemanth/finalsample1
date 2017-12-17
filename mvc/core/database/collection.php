@@ -60,6 +60,20 @@ abstract class collection
         }
     }
     
+    
+       static public function findTask($id)
+    {
+        $tableName = get_called_class();
+        $sql = 'SELECT * FROM ' . $tableName . ' WHERE userid = ?';
+        //grab the only record for find one and return as an object
+        $recordsSet = self::getResults($sql, $id);
+
+        if (is_null($recordsSet)) {
+            return FALSE;
+        } else {
+            return $recordsSet;
+        }
+    }
      static public function getTodo($id)
     {
         $tableName = get_called_class();

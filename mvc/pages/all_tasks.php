@@ -34,7 +34,7 @@
 <form action="index.php?page=tasks&action=insert" method="post" style="margin-left: 20px"> 
      
     Owneremail:<input type="email" name="owneremail" required><br><br>
-    Ownerid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="ownerid" required ><br><br>
+    Ownerid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="ownerid" required ><br><br>
     Createdate:&nbsp;&nbsp;<input type="date" name="createdate" data-date-inline-picker="true" / required><br><br>
     Duedate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="duedate" data-date-inline-picker="true" / required><br><br>
     Message:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="message" required><br><br>

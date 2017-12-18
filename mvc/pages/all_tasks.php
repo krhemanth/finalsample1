@@ -33,12 +33,12 @@
 
 <form action="index.php?page=tasks&action=insert" method="post" style="margin-left: 20px"> 
      
-    Owneremail:<input type="email" name="owneremail"><br><br>
-    Ownerid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="ownerid" ><br><br>
-    Createdate:&nbsp;&nbsp;<input type="date" name="createdate" data-date-inline-picker="true" /><br><br>
-    Duedate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="duedate" data-date-inline-picker="true" /><br><br>
-    Message:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="message"><br><br>
-    Isdone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="isdone"><br><br>
+    Owneremail:<input type="email" name="owneremail" required><br><br>
+    Ownerid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="ownerid" required ><br><br>
+    Createdate:&nbsp;&nbsp;<input type="date" name="createdate" data-date-inline-picker="true" / required><br><br>
+    Duedate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="duedate" data-date-inline-picker="true" / required><br><br>
+    Message:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="message" required><br><br>
+    Isdone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="isdone" required><br><br>
     <input type="submit" value="Add Task">&nbsp;<br><br>
     
     

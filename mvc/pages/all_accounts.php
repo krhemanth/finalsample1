@@ -20,6 +20,10 @@
 <h1>Things you got to Do</h1><br>
 </h1>
 
+<body style="background-color: #87ceeb">
+<h4 style="margin-left: 1600px;><?php include "header.php" ?><br><br></h4>
+
+<h4 style="margin-left: 1580px;"><button><a href="index.php?page=accounts&action=ViewProfile"> MyProfile</a></button><br><br><br></h4>
 <h1><a href="index.php?page=tasks&action=all">Make your tasks ---></a></h1>
 <?php 
 

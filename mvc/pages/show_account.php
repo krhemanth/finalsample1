@@ -15,15 +15,16 @@
     <![endif]-->
 </head>
 
-<?php
- include "header.php";
- ?>
+
 
 <body>
+<body style="background-color: #87ceeb">
 
-<h1>Email: <?php echo $data->email; ?></h1>
-<h1>First Name: <?php echo $data->fname; ?></h1>
-<h1>Last Name: <?php echo $data->lname; ?></h1>
+<h4 style="margin-left: 1600px;"><?php include "header.php";?></h4>
+
+<h2>Email: <?php echo $data->email; ?></h2>
+<h2>First Name: <?php echo $data->fname; ?></h2>
+<h2>Last Name: <?php echo $data->lname; ?></h2>
 
 
 <?php
@@ -36,19 +37,18 @@ print utility\htmlTable::generateTableFromOneRecord($data);
 
 <form action="index.php?page=accounts&action=save&id=<?php echo $data->id; ?>" method="post">
 
-    First name: <input type="text" name="fname" value="<?php echo $data->fname; ?>"><br>
-
-    Last name: <input type="text" name="lname" value="<?php echo $data->lname; ?>"><br>
-    Email: <input type="text" name="email" value="<?php echo $data->email; ?>"><br>
-    Phone: <input type="text" name="phone" value="<?php echo $data->phone; ?>"><br>
-    Birthday: <input type="text" name="birthday" value="<?php echo $data->birthday; ?>"><br>
-    Gender: <input type="text" name="gender" value="<?php echo $data->gender; ?>"><br>
-    <input type="submit" value="Submit form">
+    First name: <input type="text" name="fname" value="<?php echo $data->fname; ?>"><br><br>
+    Last name: <input type="text" name="lname" value="<?php echo $data->lname; ?>"><br><br>
+    Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email" value="<?php echo $data->email; ?>"><br><br>
+    Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone" value="<?php echo $data->phone; ?>"><br><br>
+    Birthday: &nbsp;&nbsp;<input type="text" name="birthday" value="<?php echo $data->birthday; ?>"><br><br>
+    Gender: &nbsp;&nbsp;&nbsp;<input type="text" name="gender" value="<?php echo $data->gender; ?>"><br><br>
+    <input type="submit" value="Update Profile"><br><br>
 </form>
 
 
 <form action="index.php?page=accounts&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1">
-    <button type="submit" form="form1" value="delete">Delete</button>
+    <button type="submit" form="form1" value="delete">Delete Profile</button>
 </form>
 
 

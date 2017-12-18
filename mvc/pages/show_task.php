@@ -25,10 +25,10 @@ print utility\htmlTable::generateTableFromOneRecord($data);
 ?>
 
 <form action="index.php?page=tasks&action=save&id=<?php echo $data->id; ?>" method="post" style= "margin-left: 20px;" > 
-    Owneremail:<input type="email" name="onweremail" value="<?php echo $data->owneremail; ?>"><br><br>
-    Ownerid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="onwerid" value="<?php echo $data->ownerid; ?>"><br><br>
-    Createdate:&nbsp;&nbsp;<input type="text" name="createdate" value="<?php echo $data->createddate; ?>"><br><br>
-    Duedate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="duedate" value="<?php echo $data->duedate; ?>"><br><br>
+    Owneremail:<input type="email" name="owneremail" value="<?php echo $data->owneremail; ?>"><br><br>
+    Ownerid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="ownerid" value="<?php echo $data->ownerid; ?>"><br><br>
+    Createdate:&nbsp;&nbsp;<input type="date" name="Createdate" data-date-inline-picker="true" value="<?php echo $data->createddate; ?>"><br><br>
+    Duedate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="duedate" data-date-inline-picker="true" value="<?php echo $data->duedate; ?>"><br><br>
     Message:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="message" value="<?php echo $data->message; ?>"><br><br>
     Isdone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="isdone" value="<?php echo $data->isdone; ?>"><br><br>
     <input type="submit" value="Update Profile"><br><br>

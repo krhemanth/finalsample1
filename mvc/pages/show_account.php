@@ -38,12 +38,12 @@ print utility\htmlTable::generateTableFromOneRecord($data);
 
 <form action="index.php?page=accounts&action=save&id=<?php echo $data->id; ?>" method="post">
 
-    First name: <input type="text" name="fname" value="<?php echo $data->fname; ?>"required><br><br>
-    Last name: <input type="text" name="lname" value="<?php echo $data->lname; ?>"required><br><br>
-    Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" value="<?php echo $data->email; ?>"required><br><br>
-    Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone" maxlength="10" value="<?php echo $data->phone; ?>"required><br><br>
-    Birthday: &nbsp;&nbsp;<input type="text" name="birthday" value="<?php echo $data->birthday; ?>"required><br><br>
-    Gender: &nbsp;&nbsp;&nbsp;<input type="text" name="gender" value="<?php echo $data->gender; ?>"required><br><br>
+    First name: <input type="text" name="fname" value="<?php echo $data->fname; ?>"><br><br>
+    Last name: <input type="text" name="lname" value="<?php echo $data->lname; ?>"><br><br>
+    Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" value="<?php echo $data->email; ?>"><br><br>
+    Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone" maxlength="10" value="<?php echo $data->phone; ?>"><br><br>
+    Birthday: &nbsp;&nbsp;<input type="text" name="birthday" value="<?php echo $data->birthday; ?>"><br><br>
+    Gender: &nbsp;&nbsp;&nbsp;<input type="text" name="gender" value="<?php echo $data->gender; ?>"><br><br>
     <input type="submit" value="Update Profile"><br><br>
 </form>
 

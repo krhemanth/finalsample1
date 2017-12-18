@@ -27,12 +27,12 @@ print utility\htmlTable::generateTableFromOneRecord($data);
 ?>
 
 <form action="index.php?page=tasks&action=save&id=<?php echo $data->id; ?>" method="post" style= "margin-left: 20px;" > 
-    Owneremail:<input type="email" name="owneremail" value="<?php echo $data->owneremail; ?>"required><br><br>
-    Ownerid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="ownerid" value="<?php echo $data->ownerid; ?>"required><br><br>
-    Createdate:&nbsp;&nbsp;<input type="date" name="Createddate" data-date-inline-picker="true" value="<?php echo $data->createddate; ?>"required><br><br>
-    Duedate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="duedate" data-date-inline-picker="true" value="<?php echo $data->duedate; ?>"required><br><br>
+    Owneremail:<input type="email" name="owneremail" value="<?php echo $data->owneremail; ?>"><br><br>
+    Ownerid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="ownerid" value="<?php echo $data->ownerid; ?>"><br><br>
+    Createdate:&nbsp;&nbsp;<input type="date" name="Createddate" data-date-inline-picker="true" value="<?php echo $data->createddate; ?>"><br><br>
+    Duedate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="duedate" data-date-inline-picker="true" value="<?php echo $data->duedate; ?>"><br><br>
     Message:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="message" value="<?php echo $data->message; ?>"required><br><br>
-    Isdone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="isdone" value="<?php echo $data->isdone; ?>"required><br><br>
+    Isdone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="isdone" value="<?php echo $data->isdone; ?>"><br><br>
     <input type="submit" value="Update Task"><br><br>
    
 </form>

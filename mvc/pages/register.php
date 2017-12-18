@@ -47,13 +47,13 @@
 <form action="index.php?page=accounts&action=register" method="post">
 <div class="container">
     <div class="login">
-    First name:&nbsp;<input type="text" name="fname"><br><br>
-    Last name: &nbsp;<input type="text" name="lname"><br><br>
-    Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="email"><br><br>
-    Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone"><br><br>
-    Birthday:&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="birthday" data-date-inline-picker="true" /><br><br>
-    Gender:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="text" name="gender"><br><br>
-    Password:&nbsp; <input type="password" name="password"><br><br>
+    First name:&nbsp;<input type="text" name="fname"  required><br><br>
+    Last name: &nbsp;<input type="text" name="lname"  required><br><br>
+    Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email"  required><br><br>
+    Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" maxlength="10" name="phone" required><br><br>
+    Birthday:&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="birthday" data-date-inline-picker="true" /  required><br><br>
+    Gender:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="text" name="gender"  required><br><br>
+    Password:&nbsp; <input type="password" name="password"  required><br><br>
     <input type="submit" value="Submit form">
     </div>
 </div>

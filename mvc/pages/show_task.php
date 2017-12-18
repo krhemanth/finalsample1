@@ -18,8 +18,10 @@
 
 <body style="background-color: #87ceeb">
 
-
- <h4 style="margin-left: 1600px;"><?php include "header.php";?></h4>
+ <h3>Edit My Task</h3>
+ <h4 style="margin-left: 1580px;"><?php include "header.php";?></h4>
+ <h4 style="margin-left: 1570px;"><button><a href="index.php?page=tasks&action=all">My Task</a></button></h4>
+ <h4 style="margin-left: 1560px;"><button><a href="index.php?page=accounts&action=ViewProfile"> MyProfile</a></button><br><br><br></h4>
  <?php
 print utility\htmlTable::generateTableFromOneRecord($data);
 ?>
@@ -27,17 +29,17 @@ print utility\htmlTable::generateTableFromOneRecord($data);
 <form action="index.php?page=tasks&action=save&id=<?php echo $data->id; ?>" method="post" style= "margin-left: 20px;" > 
     Owneremail:<input type="email" name="owneremail" value="<?php echo $data->owneremail; ?>"><br><br>
     Ownerid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="ownerid" value="<?php echo $data->ownerid; ?>"><br><br>
-    Createdate:&nbsp;&nbsp;<input type="date" name="Createdate" data-date-inline-picker="true" value="<?php echo $data->createddate; ?>"><br><br>
+    Createdate:&nbsp;&nbsp;<input type="date" name="Createddate" data-date-inline-picker="true" value="<?php echo $data->createddate; ?>"><br><br>
     Duedate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="duedate" data-date-inline-picker="true" value="<?php echo $data->duedate; ?>"><br><br>
     Message:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="message" value="<?php echo $data->message; ?>"><br><br>
     Isdone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="isdone" value="<?php echo $data->isdone; ?>"><br><br>
-    <input type="submit" value="Update Profile"><br><br>
+    <input type="submit" value="Update Task"><br><br>
    
 </form>
 
 
 <form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1" style= "margin-left: 20px;">
-<button type="submit" form="form1" value="delete">Delete Profile</button>
+<button type="submit" form="form1" value="delete">Delete Task</button>
 </form>
 
 <script src="js/scripts.js"></script>

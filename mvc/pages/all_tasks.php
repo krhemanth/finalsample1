@@ -21,13 +21,13 @@
 
 
 
-<h4 style="margin-left: 1600px;"><?php include "header.php" ?><br><br></h4>
+<h4 style="margin-left: 1580px;"><?php include "header.php" ?><br><br></h4>
 
 
 
-<h4 style="margin-left: 1580px;"><button><a href="index.php?page=accounts&action=ViewProfile"> MyProfile</a></button><br><br><br></h4>
+<h4 style="margin-left: 1560px;"><button><a href="index.php?page=accounts&action=ViewProfile"> MyProfile</a></button><br><br><br></h4>
 
-
+<h3> My Task </h3>
 <p>Add details below to your Task </p> <br>
 
 
@@ -39,12 +39,13 @@
     Duedate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="duedate" data-date-inline-picker="true" /><br><br>
     Message:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="message"><br><br>
     Isdone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="isdone"><br><br>
-    <input type="submit" value="Add Task"><br><br>
- 
+    <input type="submit" value="Add Task">&nbsp;<br><br>
+    
+    
 </form>
   </div>
 <?php
-
+if (!empty($data))
 print utility\htmlTable::genarateTableFromMultiArray($data);
 ?>
 

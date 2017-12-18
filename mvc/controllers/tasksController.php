@@ -72,8 +72,9 @@ class tasksController extends http\controller
         $user->message = $_POST['message'];
         $user->isdone = $_POST['isdone'];
         $user->userID = $_SESSION['userID'];
-        $user->save();
-        header("Location: index.php?page=tasks&action=all");
+
+       $user->save();
+       header("Location: index.php?page=tasks&action=all");
 
     }
     
@@ -92,7 +93,7 @@ class tasksController extends http\controller
         $record->message = $_POST['message'];
         $record->isdone = $_POST['isdone'];
         $record->userid = $_SESSION['userID'];
-       // print_r ($record);
+        print_r ($record);
         $record->save();
         header("Location: index.php?page=tasks&action=all");
         
@@ -119,7 +120,7 @@ class tasksController extends http\controller
         $record = todos::findOne($_REQUEST['id']);
         $record->delete();
         print_r($_POST);
-        echo "Deleted sucessfully :p";
+        header("Location: index.php?page=tasks&action=all");
 
     }
      public static function logout()

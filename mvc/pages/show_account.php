@@ -19,12 +19,13 @@
 
 <body>
 <body style="background-color: #87ceeb">
-
+<h2>My Profile</h2>
 <h4 style="margin-left: 1600px;"><?php include "header.php";?></h4>
+<h4 style="margin-left: 1600px;"><button><a href="index.php?page=tasks&action=all">My Task</a></button></h4>
 
-<h2>Email: <?php echo $data->email; ?></h2>
-<h2>First Name: <?php echo $data->fname; ?></h2>
-<h2>Last Name: <?php echo $data->lname; ?></h2>
+
+<h2>Hello: <?php echo $data->fname; ?></h2>
+
 
 
 <?php
@@ -39,7 +40,7 @@ print utility\htmlTable::generateTableFromOneRecord($data);
 
     First name: <input type="text" name="fname" value="<?php echo $data->fname; ?>"><br><br>
     Last name: <input type="text" name="lname" value="<?php echo $data->lname; ?>"><br><br>
-    Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email" value="<?php echo $data->email; ?>"><br><br>
+    Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" value="<?php echo $data->email; ?>"><br><br>
     Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone" value="<?php echo $data->phone; ?>"><br><br>
     Birthday: &nbsp;&nbsp;<input type="text" name="birthday" value="<?php echo $data->birthday; ?>"><br><br>
     Gender: &nbsp;&nbsp;&nbsp;<input type="text" name="gender" value="<?php echo $data->gender; ?>"><br><br>

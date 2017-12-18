@@ -29,7 +29,7 @@
 	position: absolute;
 	top: calc(50% - 275px);
 	left: calc(50% - 50px);
-	background : #3293f3e8;
+	background :#02d3d8;
 	box-shadow: 5px 5px 3px #2A2B2B;
 	z-index : 5;
 	height: 430px;

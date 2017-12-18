@@ -16,30 +16,28 @@
     <![endif]-->
 </head>
 
-<body>
+<body style="background-color: #87ceeb">
 
-<?php
-//this is how you print something  $data contains the record that was selected on the table.
 
- include "header.php";
- 
+ <h4 style="margin-left: 1600px;"><?php include "header.php";?></h4>
+ <?php
 print utility\htmlTable::generateTableFromOneRecord($data);
 ?>
 
-<form action="index.php?page=tasks&action=save&id=<?php echo $data->id; ?>" method="post"> 
-    Owneremail:<input type="email" name="onweremail" value="<?php echo $data->owneremail; ?>"><br>
-    Ownerid:<input type="number" name="onwerid" value="<?php echo $data->ownerid; ?>"><br>
-    Createdate:<input type="text" name="createdate" value="<?php echo $data->createddate; ?>"><br>
-    Duedate:<input type="text" name="duedate" value="<?php echo $data->duedate; ?>"><br>
-    Message:<input type="text" name="message" value="<?php echo $data->message; ?>"><br>
-    Isdone:<input type="number" name="isdone" value="<?php echo $data->isdone; ?>"><br>
-    <input type="submit" value="Submit form"><br><br>
+<form action="index.php?page=tasks&action=save&id=<?php echo $data->id; ?>" method="post" style= "margin-left: 20px;" > 
+    Owneremail:<input type="email" name="onweremail" value="<?php echo $data->owneremail; ?>"><br><br>
+    Ownerid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="onwerid" value="<?php echo $data->ownerid; ?>"><br><br>
+    Createdate:&nbsp;&nbsp;<input type="text" name="createdate" value="<?php echo $data->createddate; ?>"><br><br>
+    Duedate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="duedate" value="<?php echo $data->duedate; ?>"><br><br>
+    Message:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="message" value="<?php echo $data->message; ?>"><br><br>
+    Isdone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="isdone" value="<?php echo $data->isdone; ?>"><br><br>
+    <input type="submit" value="Update Profile"><br><br>
    
 </form>
 
 
-<form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1">
-<button type="submit" form="form1" value="delete">Delete</button>
+<form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1" style= "margin-left: 20px;">
+<button type="submit" form="form1" value="delete">Delete Profile</button>
 </form>
 
 <script src="js/scripts.js"></script>

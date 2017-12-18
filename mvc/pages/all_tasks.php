@@ -16,29 +16,44 @@
     <![endif]-->
 </head>
 
-<body>
+<body style="background-color: #87ceeb">
+<style>
+.login{
+	position: absolute;
+	top: calc(46% - 75px);
+	left: calc(50% - 50px);
+	background : #02d3d8;
+	box-shadow: 5px 5px 3px #2A2B2B;
+	z-index : 5;
+	height: 265px;
+	width: 330px;
+        padding: 10px;
+	border-radius: 4px;
+	z-index: 2;
+}
+
+</style>
+
+<h4 style="margin-left: 1600px;"><?php include "header.php" ?><br><br></h4>
 
 
-
-<?php include "header.php" ?><br><br>
-
-<a href="index.php?page=accounts&action=ViewProfile">MyProfile---></a>
+<h6 style="margin-bottom: 300px;"><a href="index.php?page=accounts&action=ViewProfile"> Click ---> To view MyProfile</a>
 
 <br><br><br>
 
 
-<form action="index.php?page=tasks&action=insert" method="post"> 
+<form action="index.php?page=tasks&action=insert" method="post" style="margin-left: 20px"> 
      
-    Owneremail:<input type="email" name="owneremail"><br>
-    Ownerid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="ownerid" ><br>
-    Createdate:&nbsp;&nbsp;<input type="text" name="createdate" ><br>
-    Duedate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="duedate"><br>
-    Message:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="message"><br>
-    Isdone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="isdone"><br><br><br>
-    <input type="submit" value="Insert Task"><br><br>
-   
+    Owneremail:<input type="email" name="owneremail"><br><br>
+    Ownerid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="ownerid" ><br><br>
+    Createdate:&nbsp;&nbsp;<input type="text" name="createdate" ><br><br>
+    Duedate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="duedate"><br><br>
+    Message:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="message"><br><br>
+    Isdone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="isdone"><br><br>
+    <input type="submit" value="Add Task"><br><br>
+ 
 </form>
-
+  </div>
 <?php
 
 print utility\htmlTable::genarateTableFromMultiArray($data);

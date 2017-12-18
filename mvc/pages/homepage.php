@@ -23,13 +23,13 @@
 	right: 200px;
 	bottom: -40px; 
 	z-index: 1;
-	opacity: 0.7;
+	opacity: 0.8;
 }
 .login{
 	position: absolute;
-	top: calc(50% - 75px);
+	top: calc(46% - 75px);
 	left: calc(50% - 50px);
-	background : #3293f3e8;
+	background : #02d3d8;
 	box-shadow: 5px 5px 3px #2A2B2B;
 	z-index : 5;
 	height: 265px;
